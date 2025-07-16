@@ -1,8 +1,14 @@
 import 'package:flutter/material.dart';
-import 'navigation/app_pathway.dart'; // 🔗 Connect routing map
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart'; // Newly generated
+import 'navigation/app_pathway.dart'; // Your existing route map
 
-void main() {
-  runApp(StuApp()); // 🚀 Starts the app
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized(); // Needed for async main
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
+  runApp(StuApp());
 }
 
 class StuApp extends StatelessWidget {
@@ -13,8 +19,8 @@ class StuApp extends StatelessWidget {
     return MaterialApp(
       title: 'Student Monitoring System',
       debugShowCheckedModeBanner: false,
-      initialRoute: '/login', // 🏁 Start from Login screen
-      routes: AppPathway.routes, // 🗺️ Use route map for navigation
+      initialRoute: '/login',
+      routes: AppPathway.routes,
     );
   }
 }
