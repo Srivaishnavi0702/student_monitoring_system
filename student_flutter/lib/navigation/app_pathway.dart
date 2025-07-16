@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 import '../screens/login_screen.dart';
 // Later you will import other screens here like:
 // '../screens/signup_screen.dart';
