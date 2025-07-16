@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "271972627035",
+    "project_id": "student-monitoring-syste-b6b4c",
+    "storage_bucket": "student-monitoring-syste-b6b4c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:271972627035:android:96419797233bc6a466457e",
+        "android_client_info": {
+          "package_name": "com.example.student_flutter"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBacFA8_EtREJpQcE_neOc2fFEFTHdKyuo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
