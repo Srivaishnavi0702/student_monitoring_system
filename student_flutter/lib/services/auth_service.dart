@@ -36,4 +36,23 @@ class AuthService {
   String? getUid() {
     return _auth.currentUser?.uid;
   }
+   // 🆔 GET USER ROLE from MySQL or backend
+  Future<String?> getUserRole(String uid) async {
+    try {
+      // ⛓️ Here you’ll later call Node.js + MySQL to get role
+      // For now just simulate based on hardcoded UID logic
+      if (uid == "admin-uid-123") {
+        return "admin";
+      } else if (uid.startsWith("T")) {
+        return "teacher";
+      } else {
+        return "student";
+      }
+    } catch (e) {
+      print("GetUserRole Error: $e");
+      return null;
+    }
+  }
+
 }
+ 
