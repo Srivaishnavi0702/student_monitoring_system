@@ -19,7 +19,7 @@ class StuApp extends StatelessWidget {
     return MaterialApp(
       title: 'Student Monitoring System',
       debugShowCheckedModeBanner: false,
-      initialRoute: '/login',
+      initialRoute: '/splash',
       routes: AppPathway.routes,
     );
   }
