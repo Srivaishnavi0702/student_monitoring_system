@@ -1,0 +1,12 @@
+# Parabeac tool files
+parabeac_tool/
+
+# Generated Dart paths
+dart_file_paths.txt
+
+# Local notes
+project_notes/
+
+# macOS or system files (optional)
+.DS_Store
+Thumbs.db

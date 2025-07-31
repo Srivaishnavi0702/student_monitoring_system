@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import '../services/auth_service.dart';
-import '../screens/login_screen.dart';
+import '../screens/auth/signup_screen.dart';
 import '../screens/student_dashboard.dart';
 import '../screens/teacher_dashboard.dart';
 import '../screens/admin_dashboard.dart';
@@ -21,7 +21,7 @@ class _AuthWrapperState extends State<AuthWrapper> {
     final user = FirebaseAuth.instance.currentUser;
 
     if (user == null) {
-      return const LoginScreen();
+      return const SignupPage();
     }
 
     // Get user role from backend
@@ -36,7 +36,7 @@ class _AuthWrapperState extends State<AuthWrapper> {
       case 'admin':
         return const AdminDashboard();
       default:
-        return const LoginScreen(); // fallback
+        return const SignupPage(); // fallback
     }
   }
 
@@ -50,7 +50,7 @@ class _AuthWrapperState extends State<AuthWrapper> {
             body: Center(child: CircularProgressIndicator()),
           );
         } else {
-          return snapshot.data ?? const LoginScreen();
+          return snapshot.data ?? const SignupPage();
         }
       },
     );

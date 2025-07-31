@@ -13,9 +13,9 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
 
-    // Wait for 2 seconds and then navigate to login
+    // Wait for 2 seconds and then navigate to signup
     Timer(const Duration(seconds: 5), () {
-      Navigator.pushReplacementNamed(context, '/login');
+      Navigator.pushReplacementNamed(context, '/signup');
     });
   }
 

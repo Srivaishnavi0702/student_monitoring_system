@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart'; // Newly generated
-import 'navigation/app_pathway.dart'; // Your existing route map
+import 'navigation/app_pathway.dart';
+
+ // Your existing route map
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized(); // Needed for async main
