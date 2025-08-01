@@ -1,5 +1,4 @@
 import '../screens/splash_screen.dart';
-import '../screens/auth/signup_screen.dart';
 // Later you will import other screens here like:
 // '../screens/signup_screen.dart';
 // '../screens/student_dashboard.dart';
@@ -13,3 +12,5 @@ class AppPathway {
     // '/student-dashboard': (context) => StudentDashboard(),
   };
 }
+
+mudiladaa saamy
